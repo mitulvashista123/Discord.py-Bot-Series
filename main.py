@@ -54,7 +54,7 @@ logger.addHandler(handler)
 
 # Loading data from .env file
 load_dotenv()
-token = os.environ['TOKEN']
+token = os.getenv('TOKEN')
 
 if __name__ == '__main__':
     # Load extension

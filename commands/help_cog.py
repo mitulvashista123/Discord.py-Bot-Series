@@ -52,7 +52,7 @@ class Help(commands.Cog):
         """Shows all modules of that bot"""
 
         # !SET THOSE VARIABLES TO MAKE THE COG FUNCTIONAL!
-        prefix = "!"
+        prefix = get_prefix(ctx)
 
         # setting owner name - if you don't wanna be mentioned remove line 49-60 and adjust help text (line 88)
         owner = "760421531041267722"

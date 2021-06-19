@@ -119,7 +119,7 @@ class Help(commands.Cog):
                         # if cog is not hidden
                         if not command.hidden:
                             emb.add_field(
-                                name=f"`./{command.name}`", value=command.help, inline=False)
+                                name=f"`{prefix}{command.name}`", value=command.help, inline=False)
                     # found cog - breaking loop
                     break
 

@@ -43,6 +43,8 @@ intents.presences = True
 bot = commands.Bot(command_prefix=commands.when_mentioned_or('!'),
                    description='A Simple Tutorial Bot', intents=intents)
 
+bot.remove_command("help")
+
 # Logging
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)

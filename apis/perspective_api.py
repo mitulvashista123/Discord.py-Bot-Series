@@ -4,7 +4,7 @@ from googleapiclient import discovery
 
 # Loading data from .env file
 load_dotenv()
-api_key = os.getenv('APIKEY')
+api_key = os.environ['APIKEY']
 
 
 def perspective_api(chat_data):

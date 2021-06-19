@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 # Loading data from .env file
 load_dotenv()
-client_id = os.getenv('CLIENTID')
-client_secret = os.getenv('CLIENTSECRET')
+client_id = os.environ['CLIENTID']
+client_secret = os.environ['CLIENTSECRET']
 
 
 def compiler(code):
